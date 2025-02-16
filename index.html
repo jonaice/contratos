@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        /* Estilos generales */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #000000, #0A1A40);
+        }
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espacio entre el ícono y el texto */
+        }
+
+        .logo-container {
+            position: relative;
+            width: 80px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Borde exterior ovalado */
+        .outer-border {
+            width: 100%;
+            height: 100%;
+            border: 5px solid white; /* Azul claro */
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        /* Área interna gris oscuro */
+        .inner-area {
+            width: 85%;
+            height: 75%;
+            background: #1E293B; /* Gris oscuro */
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        /* Rectángulos laterales */
+        .side-box {
+            width: 20px;
+            height: 30px;
+            background: #1E293B; /* Gris oscuro */
+            border: 4px solid white; /* Azul claro */
+            border-radius: 5px;
+            position: absolute;
+        }
+
+        .left-box {
+            left: 8px;
+        }
+
+        .right-box {
+            right: 8px;
+        }
+
+        /* Rectángulo central */
+        .center-box {
+            width: 35px;
+            height: 35px;
+            background: #1E293B; /* Gris oscuro */
+            border: 4px solid white; /* Azul claro */
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        /* Cuadro interno más pequeño */
+        .inner-square {
+            width: 12px;
+            height: 12px;
+            background: #1E293B; /* Gris oscuro */
+            border: 3px solid white; /* Azul claro */
+            border-radius: 3px;
+        }
+
+        /* Texto al lado del logo */
+        .logo-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: white; /* Azul primario */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-wrapper">
+        <!-- Logo -->
+        <div class="logo-container">
+            <!-- Borde exterior ovalado azul claro -->
+            <div class="outer-border">
+                <div class="inner-area"></div>
+            </div>
+
+            <!-- Rectángulos laterales -->
+            <div class="side-box left-box"></div>
+            <div class="side-box right-box"></div>
+
+            <!-- Cuadro central con cuadro interno -->
+            <div class="center-box">
+                <div class="inner-square"></div>
+            </div>
+        </div>
+
+        <!-- Texto al lado del logo -->
+        <div class="logo-text">DocsFlex</div>
+    </div>
+</body>
+</html>

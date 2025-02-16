@@ -13,7 +13,7 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
         <div className="min-h-screen grid grid-cols-12 p-10 bg-gray-100">
           <div className="bg-white rounded-xl col-span-12 lg:col-span-12 grid grid-cols-12 gap-10 p-2">
             
-            <div className="col-span-7 flex items-center justify-center bg-white">
+            <div className="col-span-7 bg-white">
               {children}
             </div>
 
