@@ -1,28 +1,17 @@
-import Image from "next/image";
-import DocsFlexLogo from "@/components/shared/logofull";
 import LogoLite from "@/components/shared/logolite";
-import IconFull from "@/components/shared/iconFull";
-import IconLite from "@/components/shared/iconLite";
+import FormLogin from "./components/form";
 
 export default function Login()
 {
     return(
 
-        <div className="flex flex-col">
-            <div className="relative w-full h-full flex">
-                <DocsFlexLogo />
-            </div>
-            <div className="relative w-full h-full flex">
-                <LogoLite />
-            </div>
+        <section className="h-full flex flex-col items-center justify-center">
 
-            <div className="relative w-full h-full flex"> 
-                <IconFull />
-            </div>
-            <div className="relative w-full h-full flex"> 
-                <IconLite />
-            </div>
-        </div>
+            <LogoLite />
+            <FormLogin />
+            
+        </section>
+
 
     )
 }
