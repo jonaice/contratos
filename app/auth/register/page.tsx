@@ -7,7 +7,7 @@ export default function Login()
 
         <section className="h-full flex flex-col items-center justify-center">
 
-            <div className=" flex pb-12 -mt-10">
+            <div className=" flex pb-12">
                 <LogoLite />
             </div>
             <FormRegister />
