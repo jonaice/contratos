@@ -5,7 +5,7 @@ const FormRegister = () => {
 
     return (
 
-        <div className="w-full max-w-3xl">
+        <div className="p-4 lg:p-1 w-full max-w-3xl">
             <h2 className="text-2xl font-semibold mb-5 text-primary"> Crear Cuenta</h2>
             <p className="text-gray-500">Ingresa tus datos para registrarte y comenzar a usar DocsFlex de manera fácil y segura.</p>
 
