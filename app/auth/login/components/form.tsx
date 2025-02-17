@@ -6,7 +6,7 @@ const FormLogin = () => {
     return (
 
         <div className="w-full max-w-md">
-            <h2 className="text-2xl font-semibold mb-5"> Iniciar Sesión</h2>
+            <h2 className="text-2xl font-semibold mb-5 text-primary"> Iniciar Sesión</h2>
             <p className="text-gray-500">Por favor, ingresa tu correo y contraseña para iniciar sesión.</p>
 
             <form className="w-full mt-5">
@@ -14,10 +14,14 @@ const FormLogin = () => {
                 <InputString type="email" placeholder="Email" />
                 <InputString type="password" placeholder="Contraseña" />
             </form>
-            <div className="flex justify-end mb-7">
-                <button type="button" className="text-gray-500">¿Olvidaste tu contraseña?</button>
+            <div className="flex justify-end mb-5">
+                <button type="button" className="text-blue-800 duration-300">¿Olvidaste tu contraseña?</button>
             </div>
             <Button type="submit" label="Ingresar"/>
+            <div className="flex mt-10 justify-center">
+                <p className="text-gray-500">¿No tienes una cuenta?</p>
+                <button className="ml-1 font-bold text-primary hover:text-blue-800 transition-colors duration-300">Regístrate aquí</button>
+            </div>
         </div>
 
     );

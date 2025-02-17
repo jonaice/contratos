@@ -10,17 +10,17 @@ interface AuthLayoutProps {
 const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
     return (
 
-        <div className="min-h-screen grid grid-cols-12 p-10 bg-gray-100">
-          <div className="bg-white rounded-xl col-span-12 lg:col-span-12 grid grid-cols-12 gap-10 p-2">
+        <div className="min-h-screen grid grid-cols-12 lg:p-10 sm:p-5 bg-gray-100">
+          <div className="bg-white rounded-xl col-span-12 md:col-span-12 grid grid-cols-12 p-2">
             
-            <div className="col-span-7 bg-white">
+            <div className="col-span-12 lg:col-span-7 md:col-span-7 bg-whiteflex justify-center p-2">
               {children}
             </div>
 
-            <section className="col-span-5 hidden lg:flex flex-col items-center justify-center bg-primary rounded-xl p-8">
+            <section className="col-span-5 hidden md:flex flex-col items-center justify-center bg-primary rounded-xl p-8 ml-4">
               
-              <div className="relative w-96 h-96">
-                <Image src="/AuthPages/img-contratos.svg" alt="Img Contrato" fill />
+              <div className="relative lg:w-96 lg:h-96 md:w-64 md:h-64">
+                <Image src="/AuthPages/img-contratos.svg" alt="Img Contrato" fill priority={true} />
               </div>
 
               <div className="text-center mt-6 px-6"> 
