@@ -20,7 +20,7 @@ const InputString: FC<InputStringProps> = ({type, placeholder, className}) =>{
         <div className="w-full relative mb-5">
             <input 
                 type={type === 'text' ? 'text' : type === 'email' ? 'email' : showPassword ? 'text' : 'password' }
-                className= {cn('w-full bg-gray-100 pl-4 pr-12 pt-2 pb-2 outline-none rounded-md', className)}
+                className= {cn('w-full bg-gray-100 pl-4 pr-12 pt-2 pb-2 outline-none rounded-md border-1 focus:border-seconday focus:shadow-md focus:shadow-seconday/30 duration-300', className)}
                 placeholder= {placeholder}
             />
 

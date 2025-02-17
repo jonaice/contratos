@@ -20,7 +20,7 @@ const FormLogin = () => {
                 <InputString type="password" placeholder="Contraseña" />
             </form>
             <div className="flex justify-end mb-5">
-                <button type="button" className="text-blue-800 duration-300">¿Olvidaste tu contraseña?</button>
+                <button type="button" className="text-blue-800 duration-300" onClick={() =>router.push("/auth/forgot-password")}>¿Olvidaste tu contraseña?</button>
             </div>
             <Button type="submit" label="Ingresar"/>
             <div className="flex mt-10 justify-center">

@@ -14,16 +14,16 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
   const pathname = usePathname(); // Obtiene la ruta actual
 
   const block={
-    pathnameImg: pathname ==='/auth/login' ? '/AuthPages/img-contratos.svg' : pathname === '/auth/register' ? '/AuthPages/img-register.svg' : pathname === '/auth/reset-password' ? '/AuthPages/img-forgot-password.svg' : '/AuthPages/img-error-404.svg',
-    title: pathname ==='/auth/login' ? 'Crea Contratos a tu Medida' : pathname === '/auth/register' ? 'Regístrate y Comienza a Generar Contratos' : pathname === '/auth/reset-password' ? 'Recupera el acceso fácilmente' : 'No hay título',
-    descripcion: pathname ==='/auth/login' ? 'Genera contratos personalizados de forma rápida, segura y eficiente. Ahorra tiempo y adapta cada documento según tus necesidades con solo unos clics.' : pathname === '/auth/register' ? 'DocsFlex es la plataforma ideal para crear, personalizar y gestionar contratos de manera rápida y segura. Optimiza tu tiempo con documentos automatizados, personalizables.' : pathname === '/auth/reset-password' ? 'Si necesitas recuperar el acceso a tu cuenta, estamos aquí para ayudarte. Ingresa tu correo y te enviaremos un enlace para que puedas crear una nueva contraseña de forma rápida y segura.' : 'No hay descripción',
+    pathnameImg: pathname ==='/auth/login' ? '/AuthPages/img-contratos.svg' : pathname === '/auth/register' ? '/AuthPages/img-register.svg' : pathname === '/auth/forgot-password' ? '/AuthPages/img-forgot-password.svg' : '/AuthPages/img-error-404.svg',
+    title: pathname ==='/auth/login' ? 'Crea Contratos a tu Medida' : pathname === '/auth/register' ? 'Regístrate y Comienza a Generar Contratos' : pathname === '/auth/forgot-password' ? 'Recupera el acceso fácilmente' : 'No hay título',
+    descripcion: pathname ==='/auth/login' ? 'Genera contratos personalizados de forma rápida, segura y eficiente. Ahorra tiempo y adapta cada documento según tus necesidades con solo unos clics.' : pathname === '/auth/register' ? 'DocsFlex es la plataforma ideal para crear, personalizar y gestionar contratos de manera rápida y segura. Optimiza tu tiempo con documentos automatizados, personalizables.' : pathname === '/auth/forgot-password' ? 'Si necesitas recuperar el acceso a tu cuenta, estamos aquí para ayudarte. Ingresa tu correo y te enviaremos un enlace para que puedas crear una nueva contraseña de forma rápida y segura.' : 'No hay descripción',
   }
     
 
     
   return (
 
-    <div className="min-h-screen grid grid-cols-12 lg:p-10 sm:p-5 bg-gray-100">
+    <div className="min-h-screen grid grid-cols-12 lg:p-10 sm:p-5 bg-gray-300">
       <div className="bg-white rounded-xl col-span-12 md:col-span-12 grid grid-cols-12 p-2">
         
         <div className="col-span-12 lg:col-span-7 md:col-span-7 bg-whiteflex justify-center p-2">
