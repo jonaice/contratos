@@ -1,7 +1,12 @@
+'use client';
+
 import InputString from "@/components/ui/inputString";
 import Button from "@/components/ui/button"; 
+import { useRouter } from "next/navigation";
 
 const FormLogin = () => {
+
+    const router = useRouter();
 
     return (
 
@@ -20,7 +25,7 @@ const FormLogin = () => {
             <Button type="submit" label="Ingresar"/>
             <div className="flex mt-10 justify-center">
                 <p className="text-gray-500">¿No tienes una cuenta?</p>
-                <button className="ml-1 font-bold text-primary hover:text-blue-800 transition-colors duration-300">Regístrate aquí</button>
+                <button className="ml-1 font-bold text-primary hover:text-blue-800 transition-colors duration-300" onClick={() => router.push("/auth/register")}>Regístrate aquí</button>
             </div>
         </div>
 

@@ -1,8 +1,13 @@
+'use client'
+
 import InputString from "@/components/ui/inputString";
 import Button from "@/components/ui/button"; 
+import { useRouter } from "next/navigation";
+
 
 const FormRegister = () => {
 
+    const router = useRouter();
     return (
 
         <div className="p-4 lg:p-1 w-full max-w-3xl">
@@ -24,9 +29,9 @@ const FormRegister = () => {
                     <Button type="submit" label="Registrarse"/>
                 </div>
             </div>
-            <div className="flex mt-6 justify-center">
+            <div className="flex mt-10 justify-center">
                 <p className="text-gray-500">¿Ya tienes una cuenta?</p>
-                <button className="ml-1 font-bold text-primary hover:text-blue-800 transition-colors duration-300">Inicia sesión aquí</button>
+                <button className="ml-1 font-bold text-primary hover:text-blue-800 transition-colors duration-300" onClick={()=> router.push("/auth/login")}>Inicia sesión aquí</button>
             </div>
         </div>
 
